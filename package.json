@@ -1,0 +1,70 @@
+{
+  "name": "graham",
+  "version": "1.0.0",
+  "description": "Search for users, and get the last tracks they liked.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --port 3000",
+    "build": "webpack -p && cp src/index.html dist/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clementsirieix/Graham.git"
+  },
+  "author": "Clément Sirieix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clementsirieix/Graham/issues"
+  },
+  "homepage": "https://github.com/clementsirieix/Graham#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-eslint": "^6.0.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-flow-strip-types": "^6.18.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-2": "^6.18.0",
+    "clean-webpack-plugin": "^0.1.9",
+    "css-loader": "^0.23.1",
+    "eslint": "2.10.2",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^5.1.1",
+    "expose-loader": "^0.7.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "flow-bin": "^0.34.0",
+    "gh-pages": "^0.11.0",
+    "html-webpack-plugin": "^2.17.0",
+    "html-webpack-template": "^5.0.0",
+    "isparta-instrumenter-loader": "^1.0.0",
+    "mocha": "^2.5.2",
+    "node-sass": "^3.10.1",
+    "npm-install-webpack-plugin": "4.0.0",
+    "phantomjs-polyfill": "0.0.2",
+    "phantomjs-prebuilt": "^2.1.7",
+    "postcss-loader": "^1.1.0",
+    "react-addons-perf": "^15.1.0",
+    "react-addons-test-utils": "^15.1.0",
+    "redux-devtools": "^3.3.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.13.0",
+    "webpack-validator": "^2.1.1"
+  },
+  "dependencies": {
+    "lodash": "^4.16.6",
+    "react": "^15.3.2",
+    "react-dom": "^15.1.0",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.0",
+    "react-router-redux": "^4.0.5",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.7.4",
+    "redux-thunk": "^2.1.0",
+    "soundcloud": "^3.1.2",
+    "webpack-hot-middleware": "^2.12.2"
+  }
+}

@@ -1,0 +1,34 @@
+body,
+html,
+#app,
+.container
+    position: relative
+    width: 100%
+    height: 100%
+    background: $white
+
+body
+    overflow: hidden
+    font-size: 16px
+    padding-top: 1rem
+    @media screen and (max-width: 780px)
+        font-size: 12px
+
+a
+    border-bottom: 2px solid blue
+
+.container
+    +medium-headline
+    width: 100%
+    max-width: 960px
+    margin: 0 auto
+    >*
+        position: relative
+    *
+        animation: fadein .5s ease-out
+
+@keyframes fadein
+    from
+        opacity: 0
+    to
+        opacity: 1

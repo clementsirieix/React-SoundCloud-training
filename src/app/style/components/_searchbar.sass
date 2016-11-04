@@ -1,0 +1,22 @@
+.searchbar
+    position: relative
+    width: 100%
+    height: 3rem
+    max-width: 500px
+    margin: 3rem auto
+    +set-shadow
+    input,
+    button
+        position: relative
+        height: 3rem
+        +dark-big-headline
+    input
+        margin-left: 1rem
+        width: 100%
+        max-width: 410px
+    button
+        float: right
+        margin-right: 1rem
+        cursor: pointer
+    ::-webkit-input-placeholder
+        color: $shuttle-gray
